@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Portal Gazette</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IM+Fell+English:ital@0;1&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<style>
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #ffffff;
+    font-family: 'IM Fell English', 'Georgia', serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 15px;
+  }
+
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px 60px;
+  }
+
+  /* ---- HEADER ---- */
+
+  .masthead {
+    text-align: center;
+    padding: 30px 0 10px;
+    border-bottom: 4px double #1a1a1a;
+    margin-bottom: 4px;
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .masthead h1 {
+    font-family: 'UnifrakturCook', 'Georgia', serif;
+    font-size: clamp(48px, 8vw, 96px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+
+  .masthead-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  .masthead-rule {
+    border: none;
+    border-top: 1px solid #1a1a1a;
+    margin: 0;
+  }
+
+  .masthead-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 6px 0;
+    border-bottom: 2px solid #1a1a1a;
+    margin-bottom: 20px;
+  }
+
+  /* ---- COLUMNS ---- */
+
+  .columns {
+    column-count: 3;
+    column-gap: 28px;
+    column-rule: 1px solid #1a1a1a;
+  }
+
+  /* ---- ARTICLES ---- */
+
+  .article {
+    break-inside: avoid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .article-divider {
+    border: none;
+    border-top: 1px solid #1a1a1a;
+    width: 40%;
+    margin: 0 auto 14px;
+  }
+
+  .article img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 0.04em;
+  }
+
+  .article p {
+    text-align: justify;
+    text-indent: 1.2em;
+    margin-bottom: 6px;
+    hyphens: auto;
+  }
+
+  .article p:first-of-type {
+    text-indent: 0;
+  }
+
+  .article p:first-of-type::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2em;
+    float: left;
+    line-height: 0.8;
+    margin: 4px 6px 0 0;
+    font-weight: 700;
+  }
+
+  .article .byline {
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+    font-style: normal;
+  }
+
+  .article a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .article a:hover {
+    text-decoration: underline;
+  }
+
+  /* ---- RESPONSIVE ---- */
+
+  @media (max-width: 900px) {
+    .columns {
+      column-count: 2;
+    }
+    .page {
+      padding: 15px 20px 40px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .columns {
+      column-count: 1;
+    }
+    .page {
+      padding: 10px 15px 30px;
+    }
+    .masthead h1 {
+      font-size: 42px;
+    }
+    .masthead-top,
+    .masthead-info {
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <span>Vol. XLVII &mdash; No. 312</span>
+      <span>Established Anno Domini MDCCCXLII</span>
+    </div>
+    <h1>The Portal Gazette</h1>
+    <p class="masthead-subtitle">A Weekly Journal of Arts, Sciences, Industry &amp; Useful Knowledge</p>
+  </header>
+  <hr class="masthead-rule">
+  <div class="masthead-info">
+    <span>Wednesday, the Sixth of August, 1856</span>
+    <span>London &amp; Edinburgh</span>
+    <span>Price: Twopence</span>
+  </div>
+
+  <div class="columns">
+
+    <article class="article">
+      <a href="https://robertegert.com"><img src="picture-gallery.jpg" alt="The gallery of Robert Egert, painter"></a>
+      <h2><a href="https://robertegert.com">The Paintings of Robert Egert</a></h2>
+      <h3>Original Paintings for the Discerning Collector</h3>
+      <p class="byline">R. Egert, Painter</p>
+      <p>Now available for viewing and purchase: original oil paintings by Robert Egert of Brooklyn. Works of uncommon quality suited to the parlour, the study, or the hall of any gentleman or lady of taste. Enquiries welcomed. Satisfaction guaranteed or your unease cheerfully refunded. View the full catalogue without delay.</p>
+    </article>
+
+    <article class="article">
+      <hr class="article-divider">
+      <a href="https://job-search-frontend.pages.dev"><img src="telescope-man.jpg" alt="A man searching the horizon through a telescope"></a>
+      <h2><a href="https://job-search-frontend.pages.dev">The Situation-Finding Engine</a></h2>
+      <h3>A Mechanical Engine for the Procurement of Employment</h3>
+      <p class="byline">Egert &amp; Sons, Proprietors</p>
+      <p>Are you idle? Unoccupied? Possessed of skills yet wanting a situation? Trouble yourself no further. Our patented Engine reads your qualifications, searches the breadth of the market, and delivers suitable positions directly to your desk. No calling upon offices. No waiting in queues. Simply furnish your particulars and let the machine do the drudgery.</p>
+    </article>
+
+    <article class="article">
+      <hr class="article-divider">
+      <a href="https://studiospaceottawa.ca"><img src="studio.jpg" alt="An artist's studio, cluttered with easels and canvasses"></a>
+      <h2><a href="https://studiospaceottawa.ca">Studio Space Ottawa</a></h2>
+      <h3>Working Spaces for Working Artists</h3>
+      <p class="byline">2477-A Kaladar Avenue, Ottawa</p>
+      <p>Forty private studios to let at reasonable rates. Clean light, stout walls, and proprietors who are themselves practising artists and understand the requirements of the trade. Open to painters, sculptors, and draughtsmen at any stage of career. Rooms available immediately. Apply within or inspect the premises at your convenience.</p>
+    </article>
+
+    <article class="article">
+      <hr class="article-divider">
+      <img src="cheese-wheel.jpg" alt="A young woman rolling a great wheel of cheese">
+      <h2>On the Remarkable Industry of the Rural Cheese-Makers</h2>
+      <h3>A Dispatch from the Western Counties</h3>
+      <p class="byline">By our Special Correspondent</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula sapien ac tortor fermentum, non bibendum velit commodo. Suspendisse potenti. Cras in metus vitae dolor ullamcorper tincidunt vel sit amet nisi.</p>
+      <p>Nullam euismod, urna ac luctus fermentum, sapien arcu tincidunt massa, vel sagittis libero nulla at eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec at velit non risus pharetra dignissim quis vitae ante.</p>
+    </article>
+
+    <article class="article">
+      <hr class="article-divider">
+      <img src="telescope-man.jpg" alt="A man peering through a telescope">
+      <h2>New Astronomical Observations from the Royal Observatory</h2>
+      <h3>Celestial Phenomena of the Present Season</h3>
+      <p class="byline">By Prof. J. Halsworth, F.R.S.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+    </article>
+
+    <article class="article">
+      <hr class="article-divider">
+      <img src="bustier.jpg" alt="A Victorian bodice or bustier garment">
+      <h2>The Latest Fashions from the Continent</h2>
+      <h3>Paris Modes for the Approaching Season</h3>
+      <p class="byline">By Mrs. E. Blackwell</p>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+      <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.</p>
+    </article>
+
+    <article class="article">
+      <hr class="article-divider">
+      <img src="monument.jpg" alt="An ancient stone monument or pillar">
+      <h2>Antiquarian Discoveries in the Northern Provinces</h2>
+      <h3>Roman Relicks Unearthed near Hadrian's Wall</h3>
+      <p class="byline">By the Rev. Dr. T. Ashmore</p>
+      <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus.</p>
+      <p>Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+    </article>
+
+    <article class="article">
+      <hr class="article-divider">
+      <img src="music.jpg" alt="A musical performance with piano, violin, and cello">
+      <h2>Grand Concert at the Assembly Rooms</h2>
+      <h3>An Evening of Sublime Harmonies</h3>
+      <p class="byline">By our Musical Critic</p>
+      <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
+      <p>Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio nam libero.</p>
+    </article>
+
+
+    <article class="article">
+      <hr class="article-divider">
+      <img src="stone.jpg" alt="An ancient standing stone">
+      <h2>The Druidical Stones of Wiltshire</h2>
+      <h3>A Geological &amp; Historical Enquiry</h3>
+      <p class="byline">By Mr. C. Darwin, Esq.</p>
+      <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupiditate non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </article>
+
+
+
+    <article class="article">
+      <hr class="article-divider">
+      <img src="un-homme-profound.jpg" alt="Portrait of a distinguished gentleman">
+      <h2>A Portrait of the Eminent Dr. Marchand</h2>
+      <h3>On the Occasion of His Jubilee</h3>
+      <p class="byline">By our Paris Correspondent</p>
+      <p>Voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis.</p>
+      <p>Doloribus asperiores repellat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+    </article>
+
+  </div>
+</div>
+</body>
+</html>
