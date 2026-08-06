@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Portal Gazette</title>
+<title>The Difference Selector</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IM+Fell+English:ital@0;1&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
@@ -209,14 +209,14 @@
       <span>Vol. XLVII &mdash; No. 312</span>
       <span>Established Anno Domini MDCCCXLII</span>
     </div>
-    <h1>The Portal Gazette</h1>
-    <p class="masthead-subtitle">A Weekly Journal of Arts, Sciences, Industry &amp; Useful Knowledge</p>
+    <h1>The Difference Selector</h1>
+    <p class="masthead-subtitle">A Cabinet &amp; Repository of Esoteric Curiosities &amp; Sundry Undertakings</p>
   </header>
   <hr class="masthead-rule">
   <div class="masthead-info">
-    <span>Wednesday, the Sixth of August, 1856</span>
-    <span>London &amp; Edinburgh</span>
-    <span>Price: Twopence</span>
+    <span id="pub-date"></span>
+    <span>Basement &amp; Attic</span>
+    <span>Price: Free</span>
   </div>
 
   <div class="columns">
@@ -322,5 +322,18 @@
 
   </div>
 </div>
+<script>
+  (function () {
+    var ordinals = ["First","Second","Third","Fourth","Fifth","Sixth","Seventh","Eighth","Ninth","Tenth",
+      "Eleventh","Twelfth","Thirteenth","Fourteenth","Fifteenth","Sixteenth","Seventeenth","Eighteenth","Nineteenth","Twentieth",
+      "Twenty-First","Twenty-Second","Twenty-Third","Twenty-Fourth","Twenty-Fifth","Twenty-Sixth","Twenty-Seventh","Twenty-Eighth","Twenty-Ninth","Thirtieth","Thirty-First"];
+    var today = new Date();
+    var weekday = today.toLocaleDateString('en-US', { weekday: 'long' });
+    var month = today.toLocaleDateString('en-US', { month: 'long' });
+    var day = ordinals[today.getDate() - 1];
+    var year = today.getFullYear();
+    document.getElementById('pub-date').textContent = weekday + ', the ' + day + ' of ' + month + ', ' + year;
+  })();
+</script>
 </body>
 </html>
