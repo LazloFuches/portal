@@ -140,17 +140,26 @@
     hyphens: auto;
   }
 
+  .columns {
+    counter-reset: article-num;
+  }
+
+  .article {
+    counter-increment: article-num;
+  }
+
   .article p:first-of-type {
     text-indent: 0;
   }
 
-  .article p:first-of-type::first-letter {
+  .article p:first-of-type::before {
+    content: counter(article-num) ".";
     font-family: 'Playfair Display', serif;
     font-size: 3.2em;
     float: left;
     line-height: 0.8;
-    margin: 4px 6px 0 0;
-    font-weight: 700;
+    margin: 4px 8px 0 0;
+    font-weight: 900;
   }
 
   .article .byline {
