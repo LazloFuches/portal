@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Portal -->
   <url>
     <loc>https://squintum.com/</loc>
-    <lastmod>2026-08-12</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-13</lastmod>
     <priority>1.0</priority>
   </url>
+
+  <!-- Three Attic Vases -->
+  <url>
+    <loc>https://squintum.com/vases/</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/skyphos-with-water-birds-01.jpg</image:loc>
+      <image:title>Attic Geometric Skyphos with Water Birds, circa 750-700 BC</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/cup-with-inscription.jpg</image:loc>
+      <image:title>Attic Black-Figure Lip Cup attributed to Tleson, circa 550-500 BC</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/white-ground-lekythos-with-mourner.jpg</image:loc>
+      <image:title>Attic White-Ground Lekythos with Mourning Figure, circa 5th Century BC</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://squintum.com/vases/skyphos.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/skyphos-with-water-birds-01.jpg</image:loc>
+      <image:title>Attic Geometric Skyphos, front view with water bird frieze</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/skyphos-01.jpg</image:loc>
+      <image:title>Attic Geometric Skyphos, side A detail</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/skyphos-02.jpg</image:loc>
+      <image:title>Attic Geometric Skyphos, side B detail</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/skyphos.jpg</image:loc>
+      <image:title>Attic Geometric Skyphos, full view with handles</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/skyphos-with-water-birds-02.jpg</image:loc>
+      <image:title>Attic Geometric Skyphos, bird frieze close-up</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/skyphos-with-water-birds-03jpg.jpg</image:loc>
+      <image:title>Attic Geometric Skyphos, interior view</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://squintum.com/vases/kylix.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/cup-with-inscription.jpg</image:loc>
+      <image:title>Attic Black-Figure Lip Cup by Tleson, side view with swan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/lip-cup-with-inscription.jpg</image:loc>
+      <image:title>Attic Black-Figure Lip Cup, side view showing inscription</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/lip-cup-interior.jpg</image:loc>
+      <image:title>Attic Black-Figure Lip Cup, interior tondo with dot-and-circle motif</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://squintum.com/vases/lekythos.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://squintum.com/vases/images/white-ground-lekythos-with-mourner.jpg</image:loc>
+      <image:title>Attic White-Ground Lekythos with Mourning Figure</image:title>
+    </image:image>
+  </url>
+
 </urlset>
