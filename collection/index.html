@@ -100,7 +100,7 @@
     var hashBuffer = await crypto.subtle.digest('SHA-256', encoder.encode(pw));
     var hashArray = Array.from(new Uint8Array(hashBuffer));
     var hash = hashArray.map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
-    if (hash === 'fa7496e4ae840306df41bd658800392e24db8ac4767159d6bdf8a23b28c44ea0') {
+    if (hash === 'c3872783f9132ebe35a019dc9122b11a11b481aa2a396f543e055b43de0f7656') {
       sessionStorage.setItem('collection_auth', 'true');
       loginScreen.style.display = 'none';
       app.style.display = 'block';
