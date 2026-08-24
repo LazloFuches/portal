@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Black-Figure Lip Cup with Inscription - Collection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+(function() {
+  if (sessionStorage.getItem('collection_auth') !== 'true') {
+    window.location.href = '/collection/';
+  }
+})();
+</script>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <div>
+      <a href="/" class="nav-parent">Squintum's</a>
+      <a href="/collection/" class="site-title">Collection</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-container">
+  <div class="hero-spacer"></div>
+
+  <article>
+    <header class="detail-hero">
+      <div class="breadcrumb">
+        <a href="/collection/">Collection</a> &rsaquo; Ancient Greek
+      </div>
+      <h1>Black-Figure Lip Cup with Inscription</h1>
+      <div class="detail-date">circa 550-530 BC</div>
+      <div class="detail-date">Attributed to Tleson</div>
+    </header>
+
+    <div class="gallery">
+      <div class="gallery-main zoomable">
+        <img src="../vases/images/cup-with-inscription.jpg" alt="Black-figure lip cup with inscription" id="main-image">
+      </div>
+      
+    </div>
+
+    <div class="detail-content">
+      <div class="content-left">
+        
+        
+        
+      </div>
+      <div class="content-right">
+        <div class="section-label">Specifications</div>
+<dl class="specs-table">
+  <div class="spec-row"><dt class="spec-label">Object</dt><dd class="spec-value">Kylix (lip cup)</dd></div>
+  <div class="spec-row"><dt class="spec-label">Culture</dt><dd class="spec-value">Attic Greek</dd></div>
+  <div class="spec-row"><dt class="spec-label">Period</dt><dd class="spec-value">Archaic</dd></div>
+  <div class="spec-row"><dt class="spec-label">Date</dt><dd class="spec-value">circa 550-530 BC</dd></div>
+  <div class="spec-row"><dt class="spec-label">Attribution</dt><dd class="spec-value">Attributed to Tleson</dd></div>
+  <div class="spec-row"><dt class="spec-label">Medium</dt><dd class="spec-value">Terracotta with black-figure decoration</dd></div>
+</dl>
+        
+        
+      </div>
+    </div>
+
+    <nav class="detail-nav"><a href="skyphos-with-water-birds.html"><span class="nav-label">&larr; Previous</span><span class="nav-title">Skyphos with Water Birds</span></a><a href="white-ground-lekythos.html" style="text-align:right;"><span class="nav-label">Next &rarr;</span><span class="nav-title">White-Ground Lekythos with Mourning Figure</span></a></nav>
+  </article>
+</div>
+
+<footer>
+  <div class="page-container">
+    <p>Private Collection</p>
+  </div>
+</footer>
+
+<script src="zoom.js"></script>
+<script>
+function setMainImage(thumb) {
+  var main = document.getElementById('main-image');
+  if (main) {
+    main.src = thumb.src;
+    main.alt = thumb.alt;
+  }
+  document.querySelectorAll('.gallery-thumbs img').forEach(function(t) { t.classList.remove('active'); });
+  thumb.classList.add('active');
+}
+</script>
+</body>
+</html>

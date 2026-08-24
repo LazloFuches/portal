@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Collection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-screen" id="login-screen" style="display:none;">
+  <div class="login-box">
+    <h1>Private Collection</h1>
+    <form id="login-form">
+      <input type="password" id="login-password" placeholder="Password" autocomplete="off">
+      <button type="submit">Enter</button>
+    </form>
+    <div class="login-error" id="login-error">Incorrect password</div>
+  </div>
+</div>
+
+<div id="app" style="display:none;">
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <div>
+        <a href="/" class="nav-parent">Squintum's</a>
+        <a href="/collection/" class="site-title">Collection</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-container">
+    <div class="hero-spacer"></div>
+
+    <header class="collection-header">
+      <h1>Collection</h1>
+      <div class="subtitle">3 works</div>
+    </header>
+
+    <div class="work-grid">
+
+      <a href="skyphos-with-water-birds.html" class="work-card">
+        <div class="card-image"><img src="../vases/images/skyphos-with-water-birds-01.jpg" alt="Skyphos with water birds, side A" loading="lazy"></div>
+        <div class="card-info">
+          <div class="card-category">Ancient Greek</div>
+          <h2>Skyphos with Water Birds</h2>
+          <div class="card-date">circa 750-700 BC</div>
+        </div>
+      </a>
+      <a href="lip-cup-with-inscription.html" class="work-card">
+        <div class="card-image"><img src="../vases/images/cup-with-inscription.jpg" alt="Black-figure lip cup with inscription" loading="lazy"></div>
+        <div class="card-info">
+          <div class="card-category">Ancient Greek</div>
+          <h2>Black-Figure Lip Cup with Inscription</h2>
+          <div class="card-date">circa 550-530 BC</div>
+        </div>
+      </a>
+      <a href="white-ground-lekythos.html" class="work-card">
+        <div class="card-image"><img src="../vases/images/white-ground-lekythos-with-mourner.jpg" alt="White-ground lekythos with mourning figure" loading="lazy"></div>
+        <div class="card-info">
+          <div class="card-category">Ancient Greek</div>
+          <h2>White-Ground Lekythos with Mourning Figure</h2>
+          <div class="card-date">circa 440-430 BC</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="page-container">
+      <p>Private Collection</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function() {
+  var loginScreen = document.getElementById('login-screen');
+  var app = document.getElementById('app');
+  var form = document.getElementById('login-form');
+  var input = document.getElementById('login-password');
+  var error = document.getElementById('login-error');
+
+  if (sessionStorage.getItem('collection_auth') === 'true') {
+    loginScreen.style.display = 'none';
+    app.style.display = 'block';
+    return;
+  }
+
+  loginScreen.style.display = 'flex';
+  app.style.display = 'none';
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var pw = input.value;
+    var encoder = new TextEncoder();
+    var hashBuffer = await crypto.subtle.digest('SHA-256', encoder.encode(pw));
+    var hashArray = Array.from(new Uint8Array(hashBuffer));
+    var hash = hashArray.map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
+    if (hash === 'fa7496e4ae840306df41bd658800392e24db8ac4767159d6bdf8a23b28c44ea0') {
+      sessionStorage.setItem('collection_auth', 'true');
+      loginScreen.style.display = 'none';
+      app.style.display = 'block';
+      error.style.display = 'none';
+    } else {
+      error.style.display = 'block';
+      input.value = '';
+      input.focus();
+    }
+  });
+})();
+</script>
+</body>
+</html>

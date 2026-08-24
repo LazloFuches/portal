@@ -1,0 +1,83 @@
+{
+  "title": "Collection",
+  "password_hash": "fa7496e4ae840306df41bd658800392e24db8ac4767159d6bdf8a23b28c44ea0",
+  "works": [
+    {
+      "slug": "skyphos-with-water-birds",
+      "title": "Skyphos with Water Birds",
+      "category": "Ancient Greek",
+      "artist": "",
+      "date": "circa 750-700 BC",
+      "period": "Late Geometric",
+      "medium": "Terracotta with painted slip",
+      "dimensions": "Height: 3 1/2 in (8.8 cm); Width with handles: 5 3/8 in (13.7 cm)",
+      "condition": "",
+      "provenance": [],
+      "description": "",
+      "estimatedValue": "",
+      "notes": "",
+      "images": [
+        { "src": "../vases/images/skyphos-with-water-birds-01.jpg", "alt": "Skyphos with water birds, side A" }
+      ],
+      "specs": [
+        { "label": "Object", "value": "Skyphos (deep drinking cup)" },
+        { "label": "Culture", "value": "Attic Greek" },
+        { "label": "Period", "value": "Late Geometric" },
+        { "label": "Date", "value": "circa 750-700 BC" },
+        { "label": "Medium", "value": "Terracotta with painted slip" }
+      ]
+    },
+    {
+      "slug": "lip-cup-with-inscription",
+      "title": "Black-Figure Lip Cup with Inscription",
+      "category": "Ancient Greek",
+      "artist": "Attributed to Tleson",
+      "date": "circa 550-530 BC",
+      "period": "Archaic",
+      "medium": "Terracotta with black-figure decoration",
+      "dimensions": "",
+      "condition": "",
+      "provenance": [],
+      "description": "",
+      "estimatedValue": "",
+      "notes": "",
+      "images": [
+        { "src": "../vases/images/cup-with-inscription.jpg", "alt": "Black-figure lip cup with inscription" }
+      ],
+      "specs": [
+        { "label": "Object", "value": "Kylix (lip cup)" },
+        { "label": "Culture", "value": "Attic Greek" },
+        { "label": "Period", "value": "Archaic" },
+        { "label": "Date", "value": "circa 550-530 BC" },
+        { "label": "Attribution", "value": "Attributed to Tleson" },
+        { "label": "Medium", "value": "Terracotta with black-figure decoration" }
+      ]
+    },
+    {
+      "slug": "white-ground-lekythos",
+      "title": "White-Ground Lekythos with Mourning Figure",
+      "category": "Ancient Greek",
+      "artist": "",
+      "date": "circa 440-430 BC",
+      "period": "Classical",
+      "medium": "Terracotta with white-ground technique",
+      "dimensions": "",
+      "condition": "",
+      "provenance": [],
+      "description": "",
+      "estimatedValue": "",
+      "notes": "",
+      "images": [
+        { "src": "../vases/images/white-ground-lekythos-with-mourner.jpg", "alt": "White-ground lekythos with mourning figure" }
+      ],
+      "specs": [
+        { "label": "Object", "value": "Lekythos (oil flask)" },
+        { "label": "Culture", "value": "Attic Greek" },
+        { "label": "Period", "value": "Classical" },
+        { "label": "Date", "value": "circa 440-430 BC" },
+        { "label": "Medium", "value": "Terracotta with white-ground technique" },
+        { "label": "Function", "value": "Funerary" }
+      ]
+    }
+  ]
+}

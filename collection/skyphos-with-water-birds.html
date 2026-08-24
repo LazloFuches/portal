@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Skyphos with Water Birds - Collection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+(function() {
+  if (sessionStorage.getItem('collection_auth') !== 'true') {
+    window.location.href = '/collection/';
+  }
+})();
+</script>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <div>
+      <a href="/" class="nav-parent">Squintum's</a>
+      <a href="/collection/" class="site-title">Collection</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-container">
+  <div class="hero-spacer"></div>
+
+  <article>
+    <header class="detail-hero">
+      <div class="breadcrumb">
+        <a href="/collection/">Collection</a> &rsaquo; Ancient Greek
+      </div>
+      <h1>Skyphos with Water Birds</h1>
+      <div class="detail-date">circa 750-700 BC</div>
+      
+    </header>
+
+    <div class="gallery">
+      <div class="gallery-main zoomable">
+        <img src="../vases/images/skyphos-with-water-birds-01.jpg" alt="Skyphos with water birds, side A" id="main-image">
+      </div>
+      
+    </div>
+
+    <div class="detail-content">
+      <div class="content-left">
+        
+        
+        
+      </div>
+      <div class="content-right">
+        <div class="section-label">Specifications</div>
+<dl class="specs-table">
+  <div class="spec-row"><dt class="spec-label">Object</dt><dd class="spec-value">Skyphos (deep drinking cup)</dd></div>
+  <div class="spec-row"><dt class="spec-label">Culture</dt><dd class="spec-value">Attic Greek</dd></div>
+  <div class="spec-row"><dt class="spec-label">Period</dt><dd class="spec-value">Late Geometric</dd></div>
+  <div class="spec-row"><dt class="spec-label">Date</dt><dd class="spec-value">circa 750-700 BC</dd></div>
+  <div class="spec-row"><dt class="spec-label">Medium</dt><dd class="spec-value">Terracotta with painted slip</dd></div>
+
+  <div class="spec-row"><dt class="spec-label">Dimensions</dt><dd class="spec-value">Height: 3 1/2 in (8.8 cm); Width with handles: 5 3/8 in (13.7 cm)</dd></div>
+</dl>
+        
+        
+      </div>
+    </div>
+
+    <nav class="detail-nav"><span></span><a href="lip-cup-with-inscription.html" style="text-align:right;"><span class="nav-label">Next &rarr;</span><span class="nav-title">Black-Figure Lip Cup with Inscription</span></a></nav>
+  </article>
+</div>
+
+<footer>
+  <div class="page-container">
+    <p>Private Collection</p>
+  </div>
+</footer>
+
+<script src="zoom.js"></script>
+<script>
+function setMainImage(thumb) {
+  var main = document.getElementById('main-image');
+  if (main) {
+    main.src = thumb.src;
+    main.alt = thumb.alt;
+  }
+  document.querySelectorAll('.gallery-thumbs img').forEach(function(t) { t.classList.remove('active'); });
+  thumb.classList.add('active');
+}
+</script>
+</body>
+</html>
