@@ -1,0 +1,2 @@
+# Redirect pages.dev traffic to custom domain
+https://portal-0bx.pages.dev/* https://squintum.com/:splat 301
